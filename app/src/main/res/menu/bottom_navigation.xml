@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/nav_yourProfile"
+        android:icon="@drawable/your_profile_black_24dp"
+        android:title="Your Profile"
+        />
+    <item
+        android:id = "@+id/nav_searchProfiles"
+        android:icon="@drawable/other_profiles_black_24dp"
+        android:title="Search Profiles"
+        />
+    <!--<item-->
+        <!--android:id = "@+id/nav_matches"-->
+        <!--android:icon="@drawable/matches_black_24dp"-->
+        <!--android:title="Matches"-->
+        <!--/>-->
+
+
+</menu>

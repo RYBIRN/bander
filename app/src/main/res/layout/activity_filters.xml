@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C4C4C"
+    tools:context=".FiltersActivity">
+
+    <!--Edit Filters-->
+    <TextView
+        android:id="@+id/editFilters"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFE6007E"
+        android:text="@string/editFilters"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/searchFilterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFilters">
+
+        <!--What are you looking for? Group-->
+        <LinearLayout
+            android:id="@+id/searchTypeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editFilters">
+
+            <TextView
+                android:id="@+id/lookingForPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lookingFor"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/lookingForCheckBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bands" />
+
+            <CheckBox
+                android:id="@+id/lookingForCheckBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/musicians" />
+
+            <CheckBox
+                android:id="@+id/lookingForCheckBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/producers" />
+
+            <CheckBox
+                android:id="@+id/lookingForCheckBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/musicVenues" />
+        </LinearLayout>
+
+        <!--Music Genre-->
+        <LinearLayout
+            android:id="@+id/musicGenreGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchTypeID">
+
+            <TextView
+                android:id="@+id/musicGenrePrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musicGenreLookingFor"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/musicGenreSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--Instrument?-->
+        <LinearLayout
+            android:id="@+id/instrumentGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/musicGenreGroup">
+
+            <TextView
+                android:id="@+id/instrumentPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instrumentLookingFor"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/instrumentSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Your Location Group-->
+    <LinearLayout
+        android:id="@+id/yourLocationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFilterID">
+
+        <TextView
+            android:id="@+id/yourLocationPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/userLocation"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/yourlocationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--Max Distance Group-->
+    <LinearLayout
+        android:id="@+id/maxDistanceGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourLocationGroup">
+
+        <TextView
+            android:id="@+id/maxDistancePrompt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/maxDistance"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/maxDistanceSliderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/maxDistanceSlider"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/milesFilterTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 miles" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/filtersCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/filtersDoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

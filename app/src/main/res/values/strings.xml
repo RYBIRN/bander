@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Bander</string>
+    <string name="email">Email</string>
+    <string name="u_name">User Name</string>
+    <string name="p_word">Password</string>
+    <string name="createAccount">Create Account</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="logIn">Log In</string>
+    <string name="cancel">Cancel</string>
+    <string name="signUp">Sign Up</string>
+    <string name="profileName">Name/Band Name</string>
+    <string name="profileType">You are?</string>
+    <string-array name="profileTypeArray">
+        <item>Musician</item>
+        <item>Band</item>
+        <item>Producer</item>
+        <item>Music Venue</item>
+    </string-array>
+    <string name="musicGenre">Your main music genre?</string>
+    <string-array name="musicGenreArray">
+        <item>Blues</item>
+        <item>Country/Folk</item>
+        <item>Classical</item>
+        <item>Electronic</item>
+        <item>Funk/Soul</item>
+        <item>Gospel/Christian</item>
+        <item>Hip-Hop/Rap/R&amp;B</item>
+        <item>Jazz</item>
+        <item>Latin</item>
+        <item>Metal</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Reggae</item>
+        <item>Soundtrack/TV/Movie</item>
+        <item>World</item>
+        <item>Other</item>
+    </string-array>
+    <string name="whatInstrument">What Instrument do you play?</string>
+    <string-array name="whatInstrumentArray">
+        <item>Bass</item>
+        <item>Brass</item>
+        <item>Drums/Percussion</item>
+        <item>Guitar</item>
+        <item>Keyboard/Piano</item>
+        <item>Strings</item>
+        <item>Vocals/Voice</item>
+        <item>Woodwinds</item>
+        <item>Other</item>
+    </string-array>
+    <string name="addImage">Add Image</string>
+    <string name="userLinks">Link for website, music videos, social media, etc.</string>
+    <string name="userBio">Your Bio</string>
+    <string name="userContact">Your Contact Info</string>
+    <string name="userContactHint">Phone Number or Email</string>
+    <string name="done">Done</string>
+    <string name="editFilters">Edit Filters</string>
+    <string name="lookingFor">What are you looking for?</string>
+    <string name="bands">Bands</string>
+    <string name="musicians">Musicians</string>
+    <string name="producers">Producers</string>
+    <string name="musicVenues">Live performance opportunities</string>
+    <string name="musicGenreLookingFor">Music genre?</string>
+    <string name="instrumentLookingFor">Instrument?</string>
+    <string name="userLocation">Your location?</string>
+    <string name="maxDistance">Max Distance</string>
+    <string name="userProfile">Your Profile</string>
+    <string name="links">Link</string>
+    <string name="bio">Bio</string>
+    <string name="matches">Matches</string>
+</resources>
